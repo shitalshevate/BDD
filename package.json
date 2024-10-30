@@ -1,0 +1,22 @@
+{
+  "name": "bdd_assignment1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.15.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/signUp/signUp.js"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.1.0"
+  }
+}
