@@ -22,5 +22,7 @@ Install cucumber Install below two plugins
   past last "cypress-cucumber-preprocessor": { "nonGlobalStepDefinitions": true, "step_definitions": "cypress/e2e/signUp/signUp.js }
 
   To run the code use following commands:
+  >>headless mode
   npx cypress run --spec "C:\Users\ShitalShevate\Desktop\BDD\cypress\e2e\signUp.feature" --headed --browser chrome
+  >>headed mode (Cypress terminal)
   npx cypress open
