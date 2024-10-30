@@ -1,28 +1,13 @@
-# BDD
-Install cucumber Install below two plugins
+BDD with Cypress and Cucumber
 
->> npm install -save-dev cypress-cucumber-preprocessor
+Running Tests
+To execute the tests, use the following commands:
 
->> npm i -D cypress cypress-cucumber-preprocessor
+Headless Mode
+Run in headless mode with Chrome:
 
-#open cypress.config.js
+npx cypress run --spec "C:/Users/../BDD/cypress/e2e/signUp.feature" --headed --browser chrome
+Interactive Mode
 
->>const cucumber = require('cypress-cucumber-preprocessor').default
->>const { defineConfig } = require("cypress");
-
-  module.exports = defineConfig({ 
-  e2e: 
-  {
-  setupNodeEvents(on, config)
-  { on('file:preprocessor', cucumber()) 
-  },
-  specPattern: "cypress/e2e/*.feature", }, });
-
-  #open package.js 
-  past last "cypress-cucumber-preprocessor": { "nonGlobalStepDefinitions": true, "step_definitions": "cypress/e2e/signUp/signUp.js }
-
-  To run the code use following commands:
-  >>headless mode
-  npx cypress run --spec "C:\Users\ShitalShevate\Desktop\BDD\cypress\e2e\signUp.feature" --headed --browser chrome
-  >>headed mode (Cypress terminal)
-  npx cypress open
+Open the Cypress Test Runner in interactive mode:
+npx cypress open
